@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: red hat display;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  height: 50vh;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  /* background-color: white; */
+  margin-bottom: 25px;
+}
+
+.card {
+  width: 450px;
+  /* background-color: aqua; */
+  /* border-radius: 0 0 25px 25px; */
+  /* padding: 50px 0; */
+}
+
+.main-img,
+.card {
+  border-radius: 25px 25px 0 0;
+}
+
+.title {
+  color: hsl(223, 47%, 23%);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.card-info {
+  padding: 50px 25px;
+  background-color: #fff;
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-info {
+  text-align: center;
+  padding: 25px 50px;
+}
+
+.plan-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  padding: 24px;
+  border-radius: 15px;
+  margin-bottom: 36px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.annual {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.change-link {
+  color: hsl(245, 75%, 52%);
+}
+
+.proceed {
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  padding: 18px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 36px;
+  box-shadow: 0 25px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cancel {
+  font-weight: 900;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.change-link:hover,
+.change-link:active {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.7);
+}
+
+.proceed:hover,
+.proceed:active {
+  cursor: pointer;
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel:hover,
+.cancel:active {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 35em) {
+  .card,
+  .main-img {
+    width: 325px;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .main-info {
+    padding: 25px 0;
+  }
+}
